@@ -1,0 +1,7 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,False}}
+{{extend 'layout.html'}}
+
+<div class="cosmonews">
+<div class="cosmonewsframe">
+<script src="http://feeds.feedburner.com/WyomaFilmsWall?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/WyomaFilmsWall"></a><br/>Powered by FeedBurner</p> </noscript>
+</div></div>

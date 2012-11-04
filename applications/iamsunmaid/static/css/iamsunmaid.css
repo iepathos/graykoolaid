@@ -1,0 +1,32 @@
+/* iamsunmaid.com styles.css */
+
+/* adaptive background to screen size: height:100%;width:100%;overflow:hidden*/
+.background { height: 100%; width:100%; overflow:hidden; z-index: -100; }
+
+#ieatraisins {
+	padding: 10px;	
+	 border: 1px solid black; font-size: 1.5em; position: fixed; bottom: 60px;  left: 45%; z-index: 900; display: block; 
+background-color: #F0F0F0; color: black; text-shadow: 1px 1px 1px yellow; }
+
+#ieatraisins { border-radius: 20px; -moz-border-radius: 20px; }
+
+#contactform { position: absolute; background-color: #250517; 
+color: yellow; text-indent: 5em; 
+opacity: .85;
+}
+
+
+#contactform h2 { color: white; text-shadow: 1px 1px 1px yellow; 
+margin-bottom: 1em;
+ }
+
+#contactform { font-size: 1.3em; border-radius: 15px; -moz-border-radius: 15px; }
+
+#contactform { border: 2px solid yellow; margin-right: -10px; width: 99%; height: 93%; }
+
+
+
+
+
+
+

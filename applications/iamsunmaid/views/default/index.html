@@ -1,0 +1,14 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,False}}
+{{extend 'layout.html'}}
+
+
+<button id="ieatraisins" onclick="jQuery('#contactform').slideToggle()">I Eat Raisins</button>
+
+<!-- Make sure the form is selected to avoid inconvenient tab or mouse click -->
+<!-- Added: .flash click to remove flash div when form opens -->
+<script type="text/javascript" ><!--//
+$('#ieatraisins').click(function() {
+  $('#contacts_name').focus();
+  $('.flash').click();
+});//-->
+</script>

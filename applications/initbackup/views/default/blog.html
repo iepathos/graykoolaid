@@ -1,0 +1,83 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,True}}
+{{extend 'layout.html'}}
+
+<h1>Blog</h1>
+<hr>
+<iframe src="http://graykoolaid.blogspot.com" scrolling="yes" frameborder="0" width="100%" height="100%"></iframe>
+<div class="post">
+3-30-2012
+
+<p>I was a Good Samaritan in the world of <a href="http://www.craigslist.com/" title="craigslist.com"/>craigslist today.  I read a post from someone in my area (California Central Valley) that went like this:
+</p>
+<h3>
+The problem:
+</h3>
+<p>
+"I need someone good with HTML and CSS to help me fix my weebly site. I need the menu repositioned from the top to the left hand side and I need the buttons on the menu to list vertically instead of horizontally."
+I responded when I saw this ad.  Hey, what you're asking for is really easy to do I'll do it for free in hopes of future business and good karma.  A quick couple of emails later, and Jay has sent me the css file and snippet of the HTML code that contained the menu.  Much more importantly, he sent me the links to the pages so I could see what he was talking about exactly.  Below is my response after ciphering through the stylesheet for a couple minutes, may it help more souls in need.
+</p>
+<h3>
+Debugging Methodology:
+</h3>
+<p>
+  I'll briefly explain my methodology for solving Jay's problem.  I opened up the site he referred me to in Google Chrome.  I right-clicked the menu Jay was talking about and then I clicked inspect element in the menu to open up the Developer Tools.  
+  The Developer Tools are an amazing part of Chrome.  If you use Firefox, <a href="http://www.getfirebug.com" title="getfirebug.com">Firebug</a> is similarly amazing.  
+  </p>
+  <p>The Developer Tools open up to the HTML and highlight the section that deals with the menu I clicked on.  I glance at the HTML to search for 2 things:
+  I'm searching for the id and class of the menu that needs to be modified.  Also, I am checking the HTML to make sure there isn't anything too crazy going on (you never know sometimes).  There is a Javascript working over the menu to make a quick dropdown effect, but that doesn't need to be touched for what Jay wants changed. 
+</p>
+<p>  
+  Ok, next I click on resources in the Developer Tools.  Then on the left hand side I expand the folder under Frames and find the css file I'm searching for.  Some sites use multiple stylesheets.  In fact, most serious sites I can think of nowadays use multiple stylesheets at once.  With Developer Tools it's very easy to find what you're looking for.  I type in and search for the id and class, "menu" and "nav," in the stylesheet to quickly get to the sections we're interested in.  I assess what's going on and open up the "main-style.css" in my editor.  
+    ( I use the Bluefish editor.  Bluefish is a pretty good editor.  I like it for the left-hand file treee, its autocompletion and auto-spacing.  It works perfectly for me to switch between Python, html, and css with ease. )
+</p>
+
+<h3>
+Examining the CSS:
+</h3>
+<p>
+/*
+    Dear Jay, I've put the code we want to look at below.  What really keeps that menu there is: weebly-menus { position:absolute; top:65px }  
+  It's one of those things that you're going to have to mess around with if it looks a little off after the changes I suggest below.  
+*/
+</p>
+#weebly-menus .weebly-menu-wrap{position:absolute; top:65px; left:70%; margin: 0px; background-color: #0d0d0d;}
+<p>
+/*
+  Position absolute basically means this menu bar is going exactly where this says.  So, top:65px, and left:70% determine where this menu is on your page.
+  For a left hand bar you can do this: left:0px .  I will say this kind of positioning can be unreliable.  This may move you're list too much, you'll have to see.  If there are a lot of other things going on in the page it can make things difficult.  ( Jay is not using a grid system.  I think the CSS was generated mostly by weebly. )   just change the number a bit if it looks bad until its where you want.  That should handle your horizontal positioning. Do the same thing with top for dealing with the vertical positioning.
+</p>
+<p>
+  Your next issue is with the menu listing horizontally.  Jay told me he was having trouble not just repositioning, but also getting his menu to list the links vertically. 
+</p>
+<p>
+  .mainNav class is the culprit you are searching for.  Specifically, .mainNav li{ float: left;} is making your menu horizontal.  It is telling each item in the menu to move horizontal, to the left of the item above it.
+*/
+</p>
+<p>
+.mainNav li{ float:left; }
+/*
+You can just delete this and it should list vertically for you.
+</p>
+<p>
+*/
+.mainNav{position: relative; font:16px Arial, sans-serif; color:#fff; margin:0px; background:url(navbg.gif) no-repeat; height: 65px; width: 780px;}
+/*
+  You need to change the height and width values here on .mainNav { height: 65px; width: 780px; } Change these to something that fits your vertical list.  As a general rule I like to make my divs as snug as I can.  Try setting width: 100px; height: 600px; and see how that looks.    
+</p>
+<p>
+  Try all that out and let me know how it went.  Hopefully, it'll all be groovy.  If it seems off, try fiddling with the numbers a bit.  If something seems really off let me how its behaving.
+</p>
+<p>
+--  Glen Baker 
+    Developer 
+    glen@graykoolaid.com
+</p>
+<p>
+Websites I'm fixing in this post: 
+http://livescanfresno.com/ and http://www.livescanventura.com/
+</p>
+<p>
+Keywords: HTML, CSS3, Weebly.com, menu, navigation, tutorial, debug, positioning, Google, Chrome, Developer Tools, Glen Baker, Firebug, Firefox, Mozilla.
+*/
+</p>
+</div>

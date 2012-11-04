@@ -1,0 +1,109 @@
+/* 
+	<!-- GrayKoolAid.com by Glen Baker - use, copy, pirate, whatever --> 
+*/
+
+
+/* Logo Wrapper */
+#logo { }
+/* Name part of my logo */
+#logo #nameblock {text-align: left; }
+/* First Name */
+#logo #fname { font-size: 4.3em; letter-spacing: .5em; 
+font-family: arial, helvetica, sans-serif; float:left; }
+#logo #nameblock #fname { text-shadow: 1px 0px #30F03d;}
+#logo #fname a:link { color: black; }
+#logo #fname a:hover { font-style:italic; color: blue; }
+#logo #fname a:visited { color: black; }
+/* Last Name */
+#logo #lname { font-size: 4em; letter-spacing: 1.1em;  
+font-family: arial, helvetica, sans-serif;  }
+#logo #nameblock #lname { text-shadow: -1px -1px #000000;}
+#logo #lname a:link { color: purple }
+#logo #lname a:hover { font-style:italic; }
+#logo #lname a:visited { color: purple }
+/* End Logo */
+
+/* My Big Button Thumbs */
+.thumbnail { height: 180px; width: 250px; padding: 5px;
+border: solid 1px #EFEFEF; border-radius: 20px; -moz-border-radius: 20px;  
+-moz-box-shadow: 1px 1px 5px #999; 	-webkit-box-shadow: 1px 1px 5px #999;
+box-shadow: 1px 1px 5px #999; margin-bottom: 2em; }
+.thumbnail:hover { cursor: pointer; -moz-box-shadow: 5px 5px 5px #888;
+-webkit-box-shadow: 5px 5px 5px #888;
+box-shadow: 5px 5px 5px #888; border: solid 1px #CCC;	}
+.thumbnail a:link { color: black }
+.thumbnail:active { -moz-box-shadow: 1px 1px 5px #999; 	-webkit-box-shadow: 1px 1px 5px #999;
+box-shadow: 1px 1px 5px #999; position: relative; left: 3px;  }
+/* End Big Button Thumbs */
+
+/* Github Link Right Hand Bar */
+#menugithub { width: 190px; text-align: center; letter-spacing: .5em; font-size: 1.4em; margin-top: 2em; }
+#menugithub:active { position: relative; right: 50px; }
+
+/*----------------------------
+	Home
+-----------------------------*/
+#intro { text-align: center; margin-left:auto; margin-right: auto; }
+
+
+#header { top: 0px; height: 40px; }
+
+#intro #statement { margin-top: 50px; text-align: center; letter-spacing: .5em; width: 680px; }
+#statement #statecreate a:link { color: red }
+#statement #statecreate a:visited { color: purple }
+#hello h2 { color: red; text-shadow: 2px 0px #f00000; font-size: 5em;}
+#statement #statecreate { position: relative; letter-spacing: .3em;}
+
+#statement #whoami h2 { color: #303030; }
+#statement #whoami a:visited {color: red }
+#statement #whoami a:hover {color: blue }
+#statement #whoami { font-size: 1.2em; letter-spacing: 1.6em; }
+
+#statement #interwebs a:link { color: green }
+#statement #interwebs a:visited {color: red }
+#statement #interwebs a:hover {color: pink; }
+#statement #interwebs { color: green; font-size: 1.3em; letter-spacing: 1.2em; }
+#statement #interwebs h2 { color: green; }
+
+#statement #credentials a:link { color: blue }
+#statement #credentials a:visited {color: red }
+#statement #credentials a:hover {color: blue }
+#statement #credentials { font-size: 1.2em; letter-spacing: -1px; }
+
+/* Socialfeed ( Big Buttons )*/
+#socialfeed { position:relative; bottom: -20px; }
+#hireme { float: right; letter-spacing: 1em; font-size: 1.2em; }
+#github { float: left; letter-spacing: 1em; font-size: 1.2em; }
+
+
+/*----------------------------
+	Projects
+-----------------------------*/
+
+/*----------------------------
+	Blog
+-----------------------------*/
+
+/*----------------------------
+	About
+-----------------------------*/
+ 
+#aboutsummary p {text-indent: 3em; font-size: 1.3em;	 }
+#glen {position:relative; height: 180px; width: 250px; padding: 5px; }
+
+/*
+	Make it look the pic moves and then gets pushed back when the user clicks
+*/
+#glen:hover { right: 12px; }
+#glen:active { left: 5px; }
+
+#glen-container { float: left; margin: 5px; margin-right: 1em;}
+
+/*----------------------------
+	Contact
+-----------------------------*/
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+

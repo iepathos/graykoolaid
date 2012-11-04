@@ -1,0 +1,220 @@
+/* CSS for Erlinda Baker Realtor website  */
+
+
+
+/*  
+			HEADER
+*/
+
+.header { outline-style: groove; }
+.header h1 { 
+background-color: #FFF380;
+font-family: 'Lovers Quarrel', cursive;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+text-indent: 15px;
+letter-spacing: .5em;  font-style: font-size: 4.1em;
+ color: black; text-shadow: 1px 2px 1px white;
+outline-style: groovy; 
+width: 600px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+  }
+
+.header h5  { display: block; background-color: #F0F0FF;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+color: black; 
+text-indent: 20px;
+letter-spacing: .2em;
+text-align: center;
+ }
+
+/*
+		LISTINGS
+*/
+.listings { border: 2px solid black; overflow: hidden; 
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+height: 480px;
+background-color: #FAF8CC;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+}
+
+.listings h3 { outline-style: solid; text-indent: 7px; display: block; background-color: #F0F0FF; 
+margin-bottom: 15px;
+}
+
+#myslideshow {  border: 1px solid black;
+margin-left: 7px; width: 680px; height: 400px; 
+overflow: hidden; position: relative; }
+
+/*  SLIDESHOW CSS  */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+ 
+
+
+
+/*  
+		TESTIMONIALS
+*/
+.testimonials { width: 700px; height: 200px; }
+
+.testimonial { text-align: center; width: 229px; 
+float: left; height: 220px;
+margin-top: 15px;
+display: block;
+border: 1px solid black;
+background-color: #736AFF;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+margin-right: 2px;
+margin-bottom: 15px;
+}
+
+.testimonial h3 { display: block; background-color: #FAF8CC; 
+border: 1px solid black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+width: 185px;
+padding: 10px;
+margin-left: 10px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+} 
+
+.description { display: block; background-color: #FFFFFF;
+margin-left: 10px; 
+width: 205px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: 1px solid black;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+}
+
+/*
+		CONTACT FORM
+*/
+
+.contactform { height: 500px; width: 700px; 
+display: block; 
+border: 1px solid black;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+background-color: #FAF0FF;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+margin-top: 45px;
+
+ }
+
+.contactform h2 { background-color: #F0F0FF !important; display: block !important; }
+
+
+#wufooform { margin-top: 20px; }
+
+
+
+/*
+		SIDEBAR
+*/
+.four.columns.left-sidebar { text-align: center;  }
+
+.portrait { border: 1px solid black; overflow: hidden;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+height: 300px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+}
+
+
+
+.sidebutton { width: 220px; padding: 10px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+ }
+ 
+ .contactinfo { text-align: center; }
+
+
+.badge { margin-bottom: 10px; }
+
+.spacer { height: 600px; }
+#mlssearch { margin-top: 5px; outline-style: groove; top: 120px; height: 550px; width: 940px; }
+.mlsframe { 
+border: 2px solid black; overflow: hidden; 
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+margin-top: 60px; height: 680px; width: 960px; background-color: #FAF8CC; }
+
+.mlsframe h3  { text-align: left; outline-style: solid; text-indent: 7px; display: block; background-color: #F0F0FF; 
+margin-bottom: 15px;
+}
+
+#mlsmylist { margin-top: 5px; outline-style: groove; top: 120px; height: 600px; width: 940px; }
+.mylistingframe { 
+border: 2px solid black; overflow: hidden; 
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+-webkit-box-shadow: 3px 3px 3px #254117;
+-moz-box-shadow: 3px 3px 3px #254117;
+box-shadow: 3px 3px 3px #254117;
+margin-top: 60px; height: 690px; width: 960px; background-color: #FAF8CC; }
+
+.mylistingframe h3  { text-align: left; outline-style: solid; text-indent: 7px; display: block; background-color: #F0F0FF; 
+margin-bottom: 15px;
+}
+
+/*
+			FOOTER
+*/

@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+
+from gluon.tools import Service
+
+gbdb=DAL('sqlite://storage.sqlite')
+gbdb.define_table('todo', Field('task'))
+service = Service()

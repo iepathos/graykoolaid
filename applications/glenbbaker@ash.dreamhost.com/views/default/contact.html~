@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+<h1>Contact</h1>
+
+<h2> insert a new contact</h2>
+{{=form}}
+ 
+<ul>
+    {{for row in rows:}}
+    <li>
+        {{="%(name)s - %(email)s - %(phone)s" % row}}
+    </li>
+    {{pass}}
+</ul>

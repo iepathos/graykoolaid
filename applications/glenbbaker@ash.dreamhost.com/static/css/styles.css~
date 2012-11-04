@@ -1,0 +1,73 @@
+/* 
+	<!-- GrayKoolAid.com by Glen Baker - use, copy, pirate, whatever --> 
+*/
+
+/* Logo Wrapper */
+#logo { margin-right: 51%; width: 700 px }
+/* Name part of my logo */
+#logo #nameblock {float: left; position: relative; }
+/* First Name */
+#logo #fname { font-size: 4em; letter-spacing: .8em; 
+font-family: arial, helvetica, sans-serif; float:left; }
+#logo #nameblock #fname { position: relative; top: -60px; }
+#logo #fname a:link { color: black }
+#logo #fname a:hover { font-style:italic; color: blue; }
+#logo #fname a:visited { color: black }
+/* Last Name */
+#logo #lname { font-size: 4em; letter-spacing: 1.2em;  
+font-family: arial, helvetica, sans-serif; float: right; }
+#logo #nameblock #lname { position: relative; top: -10px; }
+#logo #lname a:link { color: purple }
+#logo #lname a:hover { font-style:italic; }
+#logo #lname a:visited { color: purple }
+/* End Logo */
+
+/* My Big Button thumbs */
+.thumbnail { height: 180px; width: 250px; padding: 5px;
+border: solid 1px #EFEFEF; border-radius: 20px; -moz-border-radius: 20px;  
+-moz-box-shadow: 1px 1px 5px #999; 	-webkit-box-shadow: 1px 1px 5px #999;
+box-shadow: 1px 1px 5px #999; }
+
+.thumbnail:hover { cursor: pointer; -moz-box-shadow: 5px 5px 5px #888;
+-webkit-box-shadow: 5px 5px 5px #888;
+box-shadow: 5px 5px 5px #888; border: solid 1px #CCC;	}
+
+.thumbnail a:link { color: black }
+.thumbnail:active { -moz-box-shadow: 1px 1px 5px #999; 	-webkit-box-shadow: 1px 1px 5px #999;
+box-shadow: 1px 1px 5px #999;}
+
+/*----------------------------
+	Slide 1 - Home
+-----------------------------*/
+#intro { width: 700px; }
+#intro { text-align: center; margin-left: auto; margin-right: auto; }
+
+#header { top: 0px; height: 155px; }
+#intro #statement { text-align: center; letter-spacing: .5em; width: 680px; }
+#statement #statecreate a:link { color: blue }
+#statement #statecreate a:visited { color: purple }
+#statement #interwebs a:link { color: blue }
+#statement #interwebs a:visited {color: red }
+#statement #interwebs a:hover {color: blue }
+
+#intro #notice p { text-indent: 3em; margin-top: 1em; text-align: center;	 }
+
+/* Socialfeed ( Big Buttons )*/
+#socialfeed { position:relative; bottom: -50px; }
+#hireme { float: right; }
+#github { float: left; }
+
+/*----------------------------
+	Slide 3 - About
+-----------------------------*/
+
+
+#about{ width: 700px; }
+ 
+#about #glenpic { position: absolute; right: 0px; margin: 3px; top: 45px; }
+  
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+

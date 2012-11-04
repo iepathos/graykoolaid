@@ -1,0 +1,34 @@
+{{extend 'layout.html'}}
+
+
+<div id="intro">		
+<div id="header"></div>
+<div id="logo">
+<div id="nameblock">
+<div id="fname">
+<a title="about me" href="{{=URL('default', 'about')}}">glen</a>
+</div> <!-- end first name -->
+<div id="lname">
+<a title="contact me" href="{{=URL('default', 'contact')}}">baker</a>
+</div> <!-- end last name -->
+</div> <!-- end of name -->
+</div> <!-- end logo -->
+
+<div id="statement">
+<h2><a title="projects I'm working on" href="{{=URL('default', 'projects')}}" id="statecreate">I create</a></h2> <h2>clean, attractive </h2><h2><a title="previous projects" href="{{=URL('default', 'projects')}}" id="interwebs">interactive websites</a>.</h2>
+
+<div id="socialfeed">
+
+<a href="{{=URL('default', 'contact')}}" title="contact me"><div id="hireme" class="thumbnail">
+<h3>hire me</h3></div></a>
+<a href="http://www.github.com/graykoolaid" title="my git"><div id="github" class="thumbnail">
+<h3>github graykoolaid</h3>
+</div></a>
+
+</div> <!-- end socialfeed -->
+
+
+
+</div>
+</div>
+</div>

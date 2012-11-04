@@ -1,0 +1,15 @@
+{{
+response.files.insert(0,URL('static','js/jquery.js'))
+response.files.insert(3,URL('static','js/web2py.js'))
+response.files.insert(4,URL('static','js/impress.js'))
+response.include_meta()
+response.include_files()
+}}
+
+<!-- Impress Files -->
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script>impress().init();</script>

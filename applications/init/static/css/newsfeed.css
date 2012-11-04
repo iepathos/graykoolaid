@@ -1,0 +1,47 @@
+div.feedburnerFeedBlock .feedTitle { font-size: 1.4em; letter-spacing: .2em; 
+font-weight: bold;
+}
+
+
+/* Removes Buzzboost Logo (MBT) */
+div  #creditfooter{ 
+display: none; 
+} 
+
+
+.cosmonews .spacer { height: 15px; }
+
+div.feedburnerFeedBlock li:hover { background-color: #FFF380; }
+
+.cosmonews .feedburnerFeedBlock li { margin-bottom: 1.2em !important; }
+
+div.feedburnerFeedBlock li { border: 2px solid #ddd !important;
+background-color:#ffe;
+padding:12px !important; }
+
+div.feedburnerFeedBlock .date { color: #3B3131; }
+
+div.feedburnerFeedBlock .img { margin: 5px; }
+
+div.feedburnerFeedBlock ul li span.headline { 
+font-weight:bold; 
+}
+
+.cosmoform { background-color: white; }
+
+.feedburnerFeedBlock a:link { font-size: 1.2em;
+  color:#58a;
+  text-decoration:none;
+  }
+.feedburnerFeedBlock a:visited {
+  color:#969;
+  text-decoration:none;
+  }
+.feedburnerFeedBlock a:hover {
+  color:#c60;
+  text-decoration:underline;
+  }
+.feedburnerFeedBlock a img {
+  border-width:0;
+  }
+

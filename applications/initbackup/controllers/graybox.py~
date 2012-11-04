@@ -1,0 +1,26 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+def index():
+	
+@service.jsonrpc
+def getTasks():
+	todos = gbdb(gbdb.todo).select()
+	return [(todo.task,todo.id) for todo in todos]
+
+@service.jsonrpc
+def addTask(taskFromJson):
+	gbdb.todo.insert(task= taskFromJson)
+	return getTasks()
+	
+@service.jsonrpc
+def deleteTask(idFromJson):
+	del gbdb.todo[idFromJson]
+	return getTasks()
+	
+def call():
+	session.forget()
+	return service()
+	
+def graybox():
+	return dict()

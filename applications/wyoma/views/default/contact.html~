@@ -1,0 +1,5 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,False}}
+{{extend 'layout.html'}}
+
+
+<iframe class="cosmoform" height="597" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="http://glenbaker.wufoo.com/embed/m7x3r3/"><a href="http://glenbaker.wufoo.com/forms/m7x3r3/">Fill out my Wufoo form!</a></iframe>

@@ -1,0 +1,236 @@
+body {
+	background: url(paper_3.png);
+	/* border-top: 10px solid #2fddf2; */
+	font: 14px Myriad Pro;
+	color: #666;
+	letter-spacing: 0px;
+}
+
+.top {
+	height: 30px;
+	background: rgba(00,00,00,.8);
+	content: " ";
+	box-shadow: 0px 1px 5px #ccc;
+}
+
+.social-top {
+	margin-top: 8px;
+	float: right;
+}
+
+.social-top li {
+	display:inline;
+	margin-left: 10px;
+	letter-spacing: 0px;
+}
+
+.social-top a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.tagline {
+	font-size: 30px;
+	margin-top: 0px;
+	text-shadow: 1px 1px 1px #666;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	border-top: 5px solid #666;
+	border-bottom: 5px solid #666;
+	border-radius: 0px;
+	padding: 20px;
+	letter-spacing: -1px;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: .5s all ease-in-out;
+}
+
+h1 {
+	font-family: 'Lobster', cursive; 
+	font-size: 60px; 
+	text-shadow: 1px 1px 1px #000;
+	color: #2fddf2;
+}
+
+h2 {
+	font-family: 'Lobster', cursive; 
+	font-size: 40px; 
+	text-shadow: 1px 1px 1px #000;
+	color: #666;
+}
+
+.subtext {
+	text-transform: uppercase;
+	position: relative;
+	left: 100px;
+	top: -10px;
+	letter-spacing: 13px;
+	color: #666;
+	/* text-shadow: 1px 1px 1px #000; */
+	text-shadow: 0px 0px 20px #ccc;
+	font-weight: bold;
+}
+
+header {
+	margin-top:40px;
+}
+
+#main  {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #ccc;
+}
+
+.sidebar {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.sidebar li a {
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+	color: rgba(255,255,255,.8);
+	width: 180px!important;
+	background: #0083A6;
+	margin-bottom: 3px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 0px 50px 0px 50px;
+	display: block;
+	/* box-shadow: 1px 1px 1px rgba(00,00,00,.2); */
+	border-left: 10px solid #ccc;
+	border-right: 10px solid #ccc;
+}
+
+.sidebar a:hover {
+	background: #000;
+	color: rgba(255,255,255,.8);
+}
+
+.contact_us {
+	text-align:center;
+}
+.contact_us a {
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+	color: rgba(255,255,255,.8);
+	width: 200px;
+	background: #0083A6;
+	margin-bottom: 3px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 0px 50px 0px 50px;
+	display: inline-block;
+	/* box-shadow: 1px 1px 1px rgba(00,00,00,.2); */
+	border-left: 10px solid #ccc;
+	border-right: 10px solid #ccc;
+}
+
+.contact_us a:hover {
+	background: #000;
+	color: rgba(255,255,255,.8);
+}
+
+.feature {
+	width: 100%;
+	height: 400px;
+	border-top: 10px solid #000;
+	border-bottom: 10px solid #000;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+.fpcopy {
+	width: 206px;
+	float: left;
+	position: relative;
+	background: #fff url(stucco.png);
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(00,00,00,.4);
+	margin-top: 10px;
+	padding: 10px;
+	height: 100px;
+}
+
+div.fpcopy:first-of-type {
+	margin-right: 10px;
+}
+
+div.fpcopy:last-of-type {
+	margin-left: 10px;
+}
+
+.section {
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	color: #F37600;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #666;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 1px 1px 3px rgba(00,00,00,.3);
+	text-shadow: 1px 1px 1px rgba(00,00,00,.1);
+	background: rgba(255,255,255,.2);
+}
+
+.sidebar-contact {
+	margin-left: 20px;
+	width: 180px;
+	margin-top: 10px;
+}
+.sidebar-contact input {
+	border: 1px dashed #F37600;
+	background: #fff;
+	width: 90%;
+	height: 25px;
+	margin-bottom: 5px;
+	border-radius: 0px 20px 0px 20px;
+	padding-left: 10px;
+	color: #F37600;
+}
+
+.sidebar-contact textarea {
+	width: 160px;
+	height: 100px;
+	border: 1px dashed #F37600;
+	background: #fff;
+	border-radius: 0px 20px 0px 20px;
+	padding-left: 10px;
+	color: #F37600;
+}
+
+.sidebar-contact textarea:focus, .sidebar-contact input:focus {
+	outline: 0 none;
+	background: #ececec;
+}
+
+.sidebar-contact input[type="submit"] {
+	width: 50px;
+	padding: 0px;
+	background: #F37600;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 130px;
+}
+
+.question {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-top: 20px;
+}
+
+.right {
+	display:;
+	text-align: right;
+}
+

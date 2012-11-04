@@ -1,0 +1,207 @@
+/* My name is Glen... I'm the Wyoma Films cosmonaut. Here is my code */
+
+.sf-menu a { font-size: 1.2em; margin-top: .4em; }
+.topbar { height: 45px; }
+.header h1 { font-family: 'Lobster', cursive; 
+			 font-size: 60px; 
+			 text-shadow: 1px 1px 1px #000;
+			color: #2fddf2;}
+			
+.header h2 {
+			font-size: 1.00em;
+			position: relative;
+			text-transform: uppercase;
+			left: 100px;
+			top: -10px;
+			letter-spacing: 13px;
+			color: #666;
+			/* text-shadow: 1px 1px 1px #000; */
+			text-shadow: 0px 0px 20px #ccc;
+			font-weight: bold;
+
+}
+
+.header h5 { 	text-transform: uppercase;
+				position: relative;
+				left: 185px;
+				top: -10px;
+				letter-spacing: 5px;
+				color: #666;
+				/* text-shadow: 1px 1px 1px #000; */
+				text-shadow: 0px 0px 20px #ccc;
+				font-weight: bold; } 
+.header { position: relative; z-index: 100; outline-style: groove; outline-color: #F0F0FF; }
+.thestage { position: relative; top: -65px; z-index: 5; }
+.theshow { z-index: 0; width: 960px; height: 540px; }
+
+.cosmoabout { margin-left: auto; margin-right: auto; width: 600px; background-color: white;
+border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+
+ }
+.cosmoabout p { font-size: 1.2em; text-indent: 15px; 
+margin-left: 2em; 
+margin-right: 2em;
+
+ }
+
+.cosmonews { background-color: white; 
+border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+}
+
+.cosmonews .feedburnerFeedBlock { margin-left: 2em; margin-right: 2em; }
+
+
+.irlcontactframe { display: block; background-color: #FFF;
+border-radius: 15px;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border: 2px solid #ddd;
+width: 250px;
+padding: 10px;
+}
+.irlcontactinfo { margin-left: 1em; margin-right: 1em;}
+
+
+/* WYOMA CREW SLIDESHOW */
+		/*
+			Load CSS before JavaScript
+		*/
+		
+		/*
+			Slides container
+			Important:
+			Set the width of your slides container
+			Set to display none, prevents content flash
+		*/
+		.slides_container {
+			width:470px;
+			display:none;
+		}
+
+		
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+/*	position:absolute;
+	top:107px;
+	left:-39px; */
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Caption
+*/
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+/*
+	Anchors
+*/
+
+a:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}

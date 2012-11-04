@@ -1,0 +1,173 @@
+{{left_sidebar_enabled,right_sidebar_enabled=True,False}}
+{{extend 'layout.html'}}
+
+<!-- LISTINGS -->
+<div class="listings">
+<h3 >My Listings:</h3>
+<div id="myslideshow">
+
+<ul id="slides">
+  <li><img src="{{=URL('static', 'images/mylistings/1.jpg')}}" alt="" /></li>
+  <li><img src="{{=URL('static', 'images/mylistings/2.jpg')}}" alt="" /></li>
+  <li><img src="{{=URL('static', 'images/mylistings/3.jpg')}}" alt="" /></li>
+  <li><img src="{{=URL('static', 'images/mylistings/4.jpg')}}" alt="" /></li>
+  <li><img src="{{=URL('static', 'images/mylistings/5.jpg')}}" alt="" /></li>
+</ul>
+<script>
+  $(function () {
+    $("#slides").responsiveSlides();
+  });
+</script>
+
+<!-- BROWSE MY LISTINGS HERE -->
+<script type="text/javascript" ><!--//
+$('#slides').click(function() {
+  goToByScroll("mylistingframe");
+});//-->
+</script>
+
+</div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="testimonials" id="contactfocuspoint">
+
+<div class="testimonial" id="test1">
+<h3>Experienced</h3>
+<div class="description">
+testing monial blah blah vlah
+Erlinda Baker is the best realtor ever! - Previous Client
+</div>
+</div>
+<div class="testimonial" id="test2">
+<h3>Attentive</h3>
+<div class="description">
+Choosing Erlinda Baker as our realtor was the best choice we made.
+She took care of everything for us. - Previous Clients
+</div>
+</div>
+<div class="testimonial" id="test3">
+<h3>Professional</h3><div class="description">
+testing monial blah blah vlah
+Erlinda Baker helped me sell my house quickly.
+She got me the buyers I needed. - Previous Client
+</div>
+</div>
+</div>
+
+<!--     CONTACT FORM        -->
+<div id="contactform" class="contactform">
+
+<div id="wufoo-z7x3x5">
+<a class="wufooform" href="http://glenbaker.wufoo.com/forms/z7x3x5"></a>.
+</div>
+<script type="text/javascript">var z7x3x5;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'glenbaker', 
+'formHash':'z7x3x5', 
+'autoResize':true,
+'height':'597',
+'async':true,
+'header':'show'};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { z7x3x5 = new WufooForm();z7x3x5.initialize(options);z7x3x5.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+</div>
+<!--                        					               -->
+<div class="spacer">
+</div>
+
+
+
+
+<!--  LEFT SIDEBAR -->
+{{block left_sidebar}}
+
+<div class="portrait">
+<img src="{{=URL('static', 'images/erlindabaker.jpg')}}" title="Erlinda Baker" width="220px"/></div>
+<h3>Erlinda Baker</h3>
+
+<button class="sidebutton" id="seelistings">Browse My Listings</button>
+<button class="sidebutton" id="mlsidx">Browse Fresno MLS</button>
+<button class="sidebutton" id="contactme" >Contact Me</button>
+
+<!-- BROWSE MY LISTINGS HERE -->
+<script type="text/javascript" ><!--//
+$('#seelistings').click(function() {
+  goToByScroll("mylistingframe");
+});//-->
+</script>
+
+<!-- BROWSE FRESNO MLS -->
+<script type="text/javascript" ><!--//
+$('#mlsidx').click(function() {
+  goToByScroll("mlsframe");
+});//-->
+</script>
+
+<!-- CONTACT ME NOT WORKING: 
+Make sure the form is selected to avoid 
+inconvenient tab or mouse click -->
+<script type="text/javascript" ><!--//
+$('#contactme').click(function() {
+  goToByScroll("contactfocuspoint");
+  $('#wufooFormz7x3x5').focus();
+});//-->
+</script>
+
+
+
+<hr>
+<div class="contactinfo">
+<h4>Network with me:</h4>
+<span><a href="http://www.facebook.com/" title="connect with me on Facebook"><img src="{{=URL('static', 'images/f_logo.png')}}" /></a> 
+<a href="http://www.twitter.com/" title="subscribe to me on Twitter"><img src="{{=URL('static', 'images/twitter_sm.jpg')}}" /></a> 
+</span>
+<h4>Erlinda Baker</h4>
+<h5>(559)240-7948</h5>
+<h6>DRE#01482620</h6>
+<h6>1398 Draper St.</h6>
+<h6>Kingsburg, CA 93631</h6>
+
+
+</div>
+
+
+<hr>
+<div div="goodwillbadge" class="badge">
+<a href="http://www.guarantee.com/good_will_network/" title="Guarantee Good Will Network"> 
+<img src="{{=URL('static', 'images/support_goodwill_badge.jpg')}}" /></a>
+</div>
+<div id="mlsbadge"class="badge">
+<a href="http://www.fresnomls.net" title="FresnoMLS.com" >
+<img src="{{=URL('static', 'images/fresnomlslogo.png')}}" width="200px" />  </a>
+</div>
+
+<div id="sfrbadge"class="badge">
+<a href="http://www.realtorsfr.org/" title="Realtorsfr.org" >
+<img src="{{=URL('static', 'images/sfrbadge.jpg')}}" width="200px" />  </a>
+</div>
+<div id="guaranteebadge" class="badge">
+<a href="http://www.guarantee.com/" title="Guarantee.com" >
+<img src="{{=URL('static', 'images/guaranteelogo.png')}}" /></a>
+</div>
+
+<div id="mylistingframe" class="mylistingframe">
+<h3>Browse My Listings:</h3>
+<iframe id="mlsmylist" src="http://fresnomls.rapmls.com/scripts/mgrqispi.dll?APPNAME=Fresno&PRGNAME=MLSLogin&ARGUMENT=845aIOnAgkMZwbng%2FH5noieRVoSGXfBy4JMY7zCAKKk%3D&KeyRid=1">
+</iframe>
+</div>
+<div id="mlsframe" class="mlsframe">
+<h3>Search the Fresno MLS :</h3>
+<iframe id="mlssearch" src="http://fresnomls.rapmls.com/scripts/mgrqispi.dll?APPNAME=Fresno&PRGNAME=MLSLogin&ARGUMENT=TqYyytZ8hB4iW2aaSpUWzeWG8EPPUG2U8KggC13sp0U%3D&KeyRid=1">
+</iframe>
+</div>
+
+
+{{end}}
+
+

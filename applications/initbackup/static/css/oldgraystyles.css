@@ -1,0 +1,397 @@
+/* Header Text for pages */
+.tshadow { text-shadow: 1px 1px 1px #000; }
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.jpg') #fff;
+}
+
+body{
+	min-height: 600px;
+    padding: 100px 0 50px;
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	box-shadow:0 0 25px rgba(0,0,0,0.3) inset;
+	height:100%;
+}
+
+
+section, footer{
+	display: block;
+}
+
+
+/*----------------------------
+	Styling the presentation
+-----------------------------*/
+
+
+#impress:not(.impress-not-supported) .step{
+	opacity:0.4;
+}
+
+#impress .step{
+	width:700px;
+	height: 600px;
+	position:relative;
+	margin:0 auto;
+	
+	-moz-transition:1s opacity;
+	-webkit-transition:1s opacity;
+	transition:1s opacity;
+}
+
+#impress .step.active{
+	opacity:1;
+}
+
+/*
+#impress h2{
+	font: normal 44px/1.5 'PT Sans Narrow', sans-serif;
+	color:#444648;
+	position:absolute;
+	z-index:10;
+}
+
+#impress p{
+	font: normal 18px/1.3 'Open Sans', sans-serif;
+	color:#27333f;
+	position:absolute;
+	z-index:10;
+}
+*/
+#impress img{
+	position:absolute;
+	z-index:1;
+}
+
+.arrow{
+	width:32px;
+	height:54px;
+	background:url('../img/arrows.png') no-repeat;
+	position:fixed;
+	top:50%;
+	margin-top:-27px;
+	cursor:pointer;
+	text-indent:-9999px;
+	overflow:hidden;
+	opacity:0.8;
+	border:none !important;
+	text-decoration:none !important;
+	
+	-moz-transition:0.2s opacity;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.arrow:hover{
+	opacity:1;
+}
+
+#arrowLeft{
+	left:45px;
+}
+
+#arrowRight{
+	right:45px;
+	background-position:top right;
+}
+
+/* Hide the arrows if impress is not supported */
+
+#impress.impress-not-supported + .arrow,
+#impress.impress-not-supported + .arrow + .arrow{
+	display:none;
+}
+
+
+/*----------------------------
+	Slide 1 - Intro
+-----------------------------*/
+
+#impress #intro { width: 700px }
+
+#header { top: 0px; height: 155px; }
+#statement { text-align: center; letter-spacing: .5em; height: 100px; }
+#statement #statecreate a:link { color: blue }
+#statement #statecreate a:visited { color: purple }
+#statement #interwebs a:link { color: blue }
+#statement #interwebs a:visited {color: red }
+#statement #interwebs a:hover {color: blue }
+
+#intro #notice p { text-indent: 3em; margin-top: 1em; text-align: center;	 }
+
+/*----------------------------
+	Slide 2 - Services
+-----------------------------*/
+
+#impress #services{ width: 700px }
+
+#servicestatement { display: block; text-align: center; color: black; font-family: arial, helvetica, sans-serif; }
+#servicestatement { border-radius: 30px; -moz-border-radis: 30px; border: 1px solid; }
+#servicestatement a:hover { color: red }
+#servicestatement a:visited { color: purple }
+
+#services #webdevelopment { color: red }
+
+#services #webdevelopment { font-size: 3em; text-align: left; }
+
+
+#services #frontend { font-size: 3em; text-align: right;}
+#services #frontend { color: red }
+#frontendsum { display: block; text-align: center; color: black; font-family: arial, helvetica, sans-serif; }
+#frontendsum { border-radius: 30px; -moz-border-radis: 30px; border: 1px solid; }
+
+#services #backend { font-size: 3em; text-align: left;}
+#services #backend { color: red }
+#backendsum { display: block; text-align: center; color: black; font-family: arial, helvetica, sans-serif; }
+#backendsum { border-radius: 30px; -moz-border-radis: 30px; border: 1px solid; }
+#backendsum { text-align: center; width: 500px; margin-left: 4em;  }
+
+.servicesum { font-size: 1.8em; margin-bottom: 1em; margin-left: 1em; margin-right: 1em; }
+.servicesum p { margin-bottom: 1em; margin-left: 1em; margin-right: 1em; }
+
+/*----------------------------
+	Slide 3 - About
+-----------------------------*/
+
+
+#impress #about{ width: 700px }
+ 
+#about #glenpic { position: absolute; right: 0px; margin: 3px; top: 45px; }
+
+#aboutcontainer { width: 430px; 
+
+}
+
+#aboutcontainer { height: 415px; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; border: 2px solid; }
+
+#aboutcontainer { background-color: #FdFdFd;  
+    /* Box shadow */
+    -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+    -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+    box-shadow: inset 0 1px 0 0 #aec3e5;    }
+#aboutcontainer:hover { background-color: #9999CC; }
+
+#aboutsummary { border: 2px 2px #c4c8cc; }
+#aboutsummary p a:link { color: blue }
+#aboutsummary p a:visited { color: purple }
+#aboutsummary p a:hover { font-style: italic; color: red }
+#aboutsummary { text-align: left; margin-left: 1em; margin-right: 1em; font-family:arial, helvetica, sans-serif; float: left; }
+#aboutsummary p { color: black; text-indent: 15px; margin-left: 1em; margin-right: 1em; margin-top: 1em;  }
+
+
+#aboutsummary { background-color: #9999CC;  }
+#aboutsummary { border-radius: 20px; -moz-border-radius: 20px; }
+
+#about #socialfeed { position: absolute; right: 10px; top: 260px; height: 140px; width: 240px; display: block; background-color: black;  }
+#about #socialfeed { border-radius: 20px; -moz-border-radius: 20px; }
+
+#about #status { position: absolute; right: 10px; bottom: 150px; width: 240px; }
+#about #status { height: 1.75em; display: block; text-align: center; background-color: #F0F0F0 }
+#about #status { border-radius: 20px; -moz-border-radius: 20px }
+#about #status a:link { letter-spacing: .1em; color: purple }
+#about #status a:hover { color: #336611 }
+#about #status a:visited { color: purple }
+#about #status { border: 1px solid #F0F0F0; }
+
+#about #socialfeed #funfact { text-align: center; display: block; background-color: black; }
+#about #socialfeed #funfact { border-radius: 20px; -moz-border-radius: 20px }
+#about #socialfeed #funfact { letter-spacing: .5em; color: white; }
+#about #socialfeed #funfact { margin-left: .1em; margin-right: .1em; border: 2px solid white; }
+
+#about #socialfeed #glenfact { color: white; text-align: center; display: block; background-color: gray; }
+#about #socialfeed #glenfact { border-radius: 20px; -moz-border-radius: 20px }
+#about #socialfeed #glenfact:hover { background-color: white; color: black }
+
+#about #socialfeed #currentprojects { text-align: center; list-style-type: none; font-size: 1.2em; margin: 0; padding: 0; }
+#about #socialfeed #currentprojects { display: block; background-color: white; border-color: black; }
+#about #socialfeed #currentprojects { border-radius: 20px; -moz-border-radius: 20px }
+#about #socialfeed #currentprojects h2 { letter-spacing: .1em; }
+#about #socialfeed #currentprojects:hover { color: white; background-color: black }
+
+#about #socialfeed a:link { color: purple }
+#about #socialfeed a:visited { color: purple }
+#about #socialfeed a:hover { font-style: italic; }
+/*----------------------------
+	Slide 4 - Contact
+-----------------------------*/
+#impress #contact { width: 690px }
+
+#contactpromo { float: center; text-align: center; height: 120px; text-align: center; border-radius: 15px; -moz-border-radius: 15px; }
+#contactpromo h2 { color: #151B54 }
+#contactheader { height: 120px }
+
+#contactform h3 { font-size: 1.5em; }
+
+#contactform {
+ 
+    width: 650px;
+    padding: 20px;
+    background: #f0f0f0;
+    overflow:auto;
+ 
+    /* Border style */
+    border: 1px solid #cccccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; 
+ 
+    /* Border Shadow */
+    -moz-box-shadow: 2px 2px 2px #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+ 
+    }
+
+label {
+    font-family: Arial, Verdana;
+    text-shadow: 2px 2px 2px #ccc;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right:10px;
+    text-align: right;
+    width: 120px;
+    line-height: 25px;
+    font-size: 15px;
+    }
+    
+  .input {
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #b9bdc1;
+    width: 300px;
+    color: #797979;
+    }
+    
+  .hint{
+    display:none;
+    }
+    
+ .field:hover .hint {
+    position: absolute;
+    display: block;
+    margin: -30px 0 0 455px;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    background: rgba(0, 0, 0, 0.6);
+ 
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+    
+.button{
+    float: right;
+    margin:10px 55px 10px 0;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor:pointer;
+    color: #fff;
+ 
+    text-align: center;
+    text-shadow: 0 -1px 1px #64799e;
+ 
+    /* Background gradient */
+    background: #a5b8da;
+    background: -moz-linear-gradient
+       (top, #a5b8da 0%, #7089b3 100%);
+    background: -webkit-gradient
+       (linear, 0% 0%, 0% 100%,
+       from(#a5b8da), to(#7089b3));
+ 
+    /* Border style */
+    border: 1px solid #5c6f91;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+ 
+    /* Box shadow */
+    -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+    -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+    box-shadow: inset 0 1px 0 0 #aec3e5;
+ 
+    }
+    
+/*----------------------------
+	Slide 5 - Portfolio
+-----------------------------*/
+#impress #portfolio { width: 700px }
+
+
+.thumbnail { height: 180px;
+width: 250px;
+border: 1px solid; 
+border-radius: 20px; 
+-moz-border-radius: 20px; 
+-moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888; }
+
+.thumbnail a:link { color: black }
+
+#aboutwyoma { float: right; width: 400px; text-indent: 15px; }
+
+#bluebridge { right: 0 }
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+#footer #copyright { margin-left: 1em; text-align: left; color: #342d72; float: left; width: 550px;, height: 60px; position: fixed }
+
+#nav ul { list-style-type:none; margin:.5; padding:0 }
+
+#nav a:link { color: white }
+
+#nav a { display:block; width:80px }
+
+#nav li { float: right }
+
+#footer { text-align: center;
+	background-color: #111111;
+	bottom: 0;
+	box-shadow: 0 -1px 2px #111111;
+	height: 45px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+
+#footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+#footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+#footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}

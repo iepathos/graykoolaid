@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>glen baker - web developer</title>
+        
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster+Two" />
+
+			<!-- main style page -->       
+        <link rel="stylesheet" href="{{=URL('static','css/oldgraystyles.css'" />
+        
+        <!-- Button CSS -->
+        <link rel="stylesheet" href="{{=URL('static','css/buttonstyles.css'"/> 
+        
+        
+        
+    </head>
+    
+    <body>
+
+		<div id="impress" class="impress-not-supported">
+
+<!-- @INTRO -->
+			<div id="intro" class="step" data-x="0" data-y="0">
+			<div id="header"></div>
+<!-- CSS Logo by Glen Baker-->
+<div id="logo">
+<style type="text/css">
+/* Logo Wrapper */
+#logo { height:80px; margin-right: 51%; }
+/* Name part of my logo */
+#logo #nameblock {float: left; position: relative; }
+/* First Name */
+#logo #fname { font-size: 3em; letter-spacing: .9em; 
+font-family: arial, helvetica, sans-serif; float:left; }
+#logo #fname a:link { color: black }
+#logo #fname a:hover { font-style:italic; color: blue; }
+#logo #fname a:visited { color: black }
+/* Last Name */
+#logo #lname { font-size: 3em; letter-spacing: 1.5em;  
+font-family: arial, helvetica, sans-serif; float: right; }
+#logo #lname a:link { color: red }
+#logo #lname a:hover { font-style:italic; color: purple }
+#logo #lname a:visited { color: purple }
+</style>
+<div id="nameblock">
+<div id="fname">
+<a title="contact me" href="mailto:glen@graykoolaid.com">glen</a>
+</div> <!-- end first name -->
+<div id="lname">
+<a title="contact me" href="mailto:glen@graykoolaid.com">baker</a>
+</div> <!-- end last name -->
+</div> <!-- end of name -->
+</div> <!-- end logo -->
+
+<div id="statement">
+<h2><a title="about me" href="#about" id="statecreate">I create</a> clean, attractive <a title="about me" href="#about" id="interwebs">interactive websites</a>.</h2>
+
+</div>
+
+<!-- notice 
+<div id="notice">
+<p>I've read in a lot of places and been told by several people that it is poor design to not have a readily available navigation bar lurking above, below, and/or at my side.  The problem is that
+it is impossible to get lost when you are constantly being told where you are and what's around you.  Is it possible that the feeling of discovering something new is significantly diminished 
+when you arrived there by following constant road signs?
+<br />
+<b>This is an argument for getting lost:</b>  
+<br />
+	Go explore.  I leave you with new abilities and little direction.  Your mouse and buttons on your keyboard will do different 
+	things in different places.  
+	 </p>
+</div> <!-- end notice -->
+
+		    </div> <!-- end intro div -->
+		    
+	    
+		    <div id="about" class="step" data-x="-600" data-y="600" data-scale="0.2" data-rotate="270">
+		        <div class="tshadow"><h2>about me</h2></div>
+		        <img id="glenpic" class="thumbnail" src="assets/img/glen.jpg" />
+		        <br />
+		        <div id="aboutcontainer">
+		        <br />
+		        <div id="aboutsummary">
+		        <p>My father introduced me to the basics of computer programming when I was 7.  Ever since, computers have been a major part of my life.  I was the layout editor for my high school newspaper.
+		        I re-designed the layout using Adobe Photoshop and InDesign. My design won the 2004 award for Best Layout Design at the San Joaquin Valley Scholastic Press Association competition at 
+		        <a href="http://www.csufresno.edu/" title="csufresno.edu">California State University, Fresno</a>.</p>
+		        <p>I earned a Bachelor of Arts degree with a major in English from <a href="http://www.oberlin.edu" title="oberlin.edu">Oberlin College</a> in 2010.  
+		        I started working for <a title="wyomafilms.com" href="http://www.wyomafilms.com">Wyoma Films Inc.</a>,  a multimedia production company 
+		        based out of California in August 2011.  I wrote a shot-list, a pitch for a set of commercials, a social media marketing plan, a business proposal for it all, and a friendly cover letter.  
+		        I created this package as a way to create business for Wyoma Films.  I sold the package to <a title="sunmaid.com" href="http://www.sunmaid.com/">Sun Maid Growers of California</a> who have commissioned Wyoma Films 
+		        to produce three commercials based on my proposal.</p>
+		        <br />
+		       </div>	
+				  	        
+		        </div> <!-- end aboutcontainer -->
+		        
+		        <div id="status"><button title="contact me" class="cupid-blue" onClick="location.href='mailto:glen@graykoolaid.com'" value="contact me">I'm accepting new projects!</button></div>
+		        
+		        <!-- socialfeed -->
+		        <div id="socialfeed">
+		        
+		        <div id="funfact"><h2>Fun Fact:</h2> </div>
+		        <div id="glenfact">I love to move around this website using the arrow buttons on my keyboard. Give it a try!</div>
+		        
+		        <div id="currentprojects"><h2>current project:</h2>
+				  <li>iamsunmaid.com</li>
+				  <li></li>       
+		        </div>
+		        </div> <!-- end socialfeed -->
+		        
+		    </div> <!-- end about -->
+
+<!-- @SERVICES 
+		    <div id="services" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+		       
+						<div class="tshadow"><h1>services</h1></div>
+						
+						<div id="servicesheader">
+			<!-- services header 					
+						</div>
+			<br />
+			
+			
+			<!-- service
+			<div id="webdevelopment">web development</div>
+			<div id="servicestatement">
+			<br />
+			<h2>I created this website.  <br />
+			I created <a href="#portfolio" title="my portfolio">these</a> websites.<br /> 
+			<a href="#contact" title="contact me">I want to create your website.</a></h2> <br />
+			<!-- end web design service
+			</div> <!-- end of service statement  
+			<br />
+			
+			<!-- IX/UX
+			<div id="frontend">front-end</div>
+			<div id="frontendsum" class="servicesum">
+			<br />
+			<p>IX/UX Design, AJAX, Java, PHP, HTML5, CSS3</p>
+			</div>	<!-- end ixux 		
+			
+			
+			<!-- creative marketing service 
+			<div id="backend">back-end</div>
+			<div id="backendsum" class="servicesum">
+			<br />
+			<p>Python, web2py, MySQL, Linux</p>
+			</div>
+			<!-- end creative marketing service							
+		       
+		    </div> <!-- end services -->
+		    
+<!-- @PROJECTS 
+		    <div id="portfolio" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+					        
+		        <div class="tshadow"><h1>projects:</h1></div><br />
+		        <!-- Wyoma container 
+		        <div id="wyomacontainer">
+		        <div id="aboutwyoma">
+		        		<p>Wyoma Films Inc. is a multimedia production company.  They do music videos, documentaries, commercials, viral videos, and feature length films.</p><a href="http://www.wyomafilms.com" title="wyomafilms.com">http://www.wyomafilms.com</a>
+		        		</div>
+		        		<div class="thumbnail"><a href="http://www.wyomafilms.com"><img class="thumbnail" src="assets/img/wyomathumb.png" title="wyomafilms.com"/></a></div>
+		        	</div> <!-- end wyoma container 	
+		        			        
+		    </div> <!-- end projects -->
+		    		    
+<!-- @CONTACT 
+		    <div id="contact" class="step" data-x="-200" data-y="1500" data-rotate="180">
+		        <div id="contactheader">		        <!-- Spacer 		        </div>
+<form id="contactform" name="contact_form" class="rounded" method="post" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi">
+
+<h3>contact me</h3>
+ <br />
+<div class="field">
+    <label for="name">name:</label>
+    <input type="hidden" name="required" value="realname, email, comments">
+    <input type="hidden" name="recipient" value="info@graykoolaid.com">
+    <input type="hidden" name="subject" value="New Message from graykoolaid.com">
+    <input type="text" class="input" name="realname" id="name" maxlength="30" />
+    <p class="hint">enter your name.</p>
+</div>
+ 
+<div class="field">
+    <label for="email">email:</label>
+    <input type="text" class="input" name="email" id="email" maxlength="30" />
+    <p class="hint">enter your email.</p>
+</div>
+ 
+<div class="field">
+    <label for="message">message:</label>
+    <textarea class="input textarea" name="comments" id="message">
+    </textarea>
+    <p class="hint">write your message.</p>
+</div>
+
+ <input type="submit" name="Submit"  class="button" value="Send" />
+ <input type="hidden" name="redirect" value="#intro">
+</form>
+<br />
+<br />
+<div id="contactpromo">
+<h2>I'm available to take on new projects!  If you are interested in quality web work, look no further.  Send me a message about it!</h2>
+</div>
+
+		    </div> <!-- end contact -->
+
+
+		    
+		    
+		</div> <!-- end of pages -->
+
+		<a id="arrowLeft" class="arrow">&lt;</a>
+		<a id="arrowRight" class="arrow">&gt;</a>
+
+
+<div id="footer">
+
+
+<div id="nav">
+<!-- Bottom navigation 
+	<ul>	
+	
+	<li><a href="#about">about</a></li>
+	<li><a href="#portfolio">projects</a></li>
+	<li><a href="#services">blog</a></li>
+	<li><a href="#contact">contact</a></li>
+	</ul>
+<!-- end bottom navigation -->
+	
+</div>
+
+	
+
+<div id="copyright">
+© All rights reserved graykoolaid.com  - glen baker - web developer
+</div>
+</div> <!-- end footer -->
+
+
+        <!-- JavaScript includes -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="assets/js/impress.js"></script>
+		<script src="assets/js/script.js"></script>
+		
+		<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="assets/js/gen_validatorv31.js" type="text/javascript"></script>
+
+
+
+    </body>
+</html>
+

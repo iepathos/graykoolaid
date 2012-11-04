@@ -1,0 +1,14 @@
+<html>
+
+<head>
+<meta name="pygwt:module"
+				content="{{=URL(r=request,c='static',f='output/TodoApp')}}" />
+<title>Todo List</title></head>
+<body>
+<h1>Simple Todo List</h1>
+<i>Type a new task to insert in db, click on existing task to delete it</i>
+
+<script type="text/javascript"  src="{{=URL(r=request,c='static',f='output/pygwt.js')>}}">
+
+</script>
+</body></html>
